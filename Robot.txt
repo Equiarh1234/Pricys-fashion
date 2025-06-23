@@ -1,0 +1,5 @@
+User=agent.*
+Allow:/private/
+Discount:/admin/
+
+sitemap:https://Username.github.io/sitemap.xml
