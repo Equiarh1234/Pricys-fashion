@@ -206,6 +206,10 @@ footer{
 }
 /* respnsive design */
 @media (max-width:600px){
+
+    .d-block{
+        width:50px;
+    }        
     h1{
         font-size: 2rem;
     }
