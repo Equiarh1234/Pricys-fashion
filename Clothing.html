@@ -49,8 +49,9 @@
     <div class="prices">
         <span class="current-price">$23 </span>
         <span class="original-price">$30 </span>
-        <span class="discount-price">$7off</span>
+        <span class="discount-price">$7%</span>
     </div>
+    <button id="btn" class="buy-now-btn" data-product="Women two-piece(short)" data-price="23" data-image="product img/women short.jpg">Buy Now</button>
 </div>
      </div> 
 
@@ -71,6 +72,7 @@
         <span class="original-price">$35</span>
         <span class="discount-price">$20%</span>
     </div>
+     <button class="buy-now-btn" data-product="Women two-piece(long)" data-price="30" data-image="product img/women long.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -91,6 +93,7 @@
         <span class="original-price">$90 </span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="sneakers" data-price="80" data-image="product img/sneakers.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -111,8 +114,9 @@
         <span class="original-price">$28</span>
         <span class="discount-price">$20%</span>
     </div>
+    <button class="buy-now-btn" data-product="Men two-piece(short)" data-price="25" data-image="product img/men short.jpg">Buy Now</button>
 </div>
-     </div>
+</div>
 
       <!-- card 5-->
          <div class="product-card">
@@ -131,6 +135,7 @@
         <span class="original-price">$40</span>
         <span class="discount-price">$20%</span>
     </div>
+      <button class="buy-now-btn" data-product="Women outfits with heel" data-price="35" data-image="product img/outfits.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -151,6 +156,7 @@
         <span class="original-price">$40</span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="Men two-piece(long)" data-price="35" data-image="product img/men long.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -171,6 +177,7 @@
         <span class="original-price">$25 </span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="flat clog sandals" data-price="19" data-image="product img/Sandals.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -191,6 +198,7 @@
         <span class="original-price">$30 </span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="Men cargo jeans" data-price="20" data-image="product img/men cargo.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -211,6 +219,7 @@
         <span class="original-price">$38 </span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="Women cargo jeans" data-price="30" data-image="product img/women cargo.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -231,6 +240,7 @@
         <span class="original-price">$60</span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="thick-soled wedge heel" data-price="55" data-image="product img/heel.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -251,6 +261,7 @@
         <span class="original-price">$28 </span>
         <span class="discount-price">$10%</span>
     </div>
+      <button class="buy-now-btn" data-product="caps" data-price="23" data-image="product img/caps.jpg">Buy Now</button>
 </div>
      </div>
 
@@ -270,9 +281,76 @@
         <span class="original-price">$30 </span>
         <span class="discount-price">$20%</span>
     </div>
-</div>
+      <button class="buy-now-btn" data-product="Women bags" data-price="25" data-image="product img/bags.jpg">Buy Now</button>
      </div>
+     </div>
+     </div>
+    
+     <div id="purchaseForm" class="purchase-form">
+        <h2>Complete your purchase</h2>
+        <div class="product-summary">
+            <img id="selectedproductImage" src="" alt="selected product">
+         <div>
+            <h3 id="selectedProductName"></h3>
+            <p id="selectedProductPrice"></p>
+         </div>   
+        </div>
 
-    </div> 
+        <form id="checkoutform">
+
+            <div class="form-group">
+                <label for="name">full Name</label>
+                <input type="text" id="name" name="name" required>
+           </div>
+
+       <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="address" required>
+    </div>
+
+   <div class="form-group">
+    <label for="address">shipping address</label>
+    <input type="address" id="address" name="address" required>
+
+   </div>
+
+   <div class="form-group">
+    <label for="phone">phone number</label>
+    <input type="phone" id="phone" name="phone" required>
+   </div>
+
+   <button type="submit" class="submit-btn">send order via Email</button>
+    </form>
+    
+    <div class="email-instructions">
+        <h3> How it works</h3>
+        <p>when you click "send order via email",your default email client will open
+             with a pre-filled email containing your order details. simply review
+              the infromation and click send to place your order.
+     </p>
+   </div>
+</div>
+   <div id="thank-you" class="thank-you">
+    <i class="fas fa-check-circle"></i>
+    <h2>Thank You for Your Purchase</h2>
+
+    <p>Your order email has been prepared.
+        please check your email client and
+        click send to complete your order.
+   </p>
+   <p>We'will process your order once we receive your email.</p>
+ </div>
+
+ 
+    <footer>
+        <p>&copy; 2025 Ultimate Hub For  Everyday fashion</p>
+    </footer>
+
+    <script src="jsscript.js"></script>
+
 </body>
 </html>
+         
+     
+
+        
