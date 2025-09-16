@@ -1,3 +1,14 @@
+:root{
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;  
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +18,7 @@
 body{
     background-color: white;
     color: #333;
+    line-height: 1.6;
 }
 
 header{
@@ -16,6 +28,13 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.container {
+    width: 100;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .nav-top{
@@ -59,6 +78,7 @@ header{
 .sale-tag{
     color: red;
 }
+    
 .products-container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
@@ -128,7 +148,110 @@ header{
     font-size: 14px;
 }
 
-/* responsive adjust */
+.buy-now-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.buy-now-btn:hover {
+    background-color: #333;
+}
+/* purchase form style */
+.purchase-form{
+    display: none;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.purchase-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group texterea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-btn{
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:background-color 0.3s;
+}
+.product-summary{
+    display: flex;
+    align-items: center;
+    gap: 15;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.product-summary img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+     margin-right: 15px;
+}
+.thank-you {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-bottom: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.thank-you i {
+    font-size: 50px;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+/* .email-instructions  */
+.email-instructions {
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #4a90e2;
+}
+.email-instructions h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+/* responsive adjustment */
 @media(max-width:786px){
     .nav-top,.nav-main{
         gap: 15px;
@@ -159,3 +282,10 @@ header{
         padding: 10px;
     }
 }
+
+
+
+   
+
+
+    
