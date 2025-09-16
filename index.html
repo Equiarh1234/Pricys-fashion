@@ -1,13 +1,22 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQERLFFC5R"></script>
+
 <script>
+
+  function loadAnalytics(){
+  var gtaScript=document.createElement("script")
+  gtaScript.src="https://www.googletagmanager.com/gtag/js?id=G-QQERLFFC5R"
+  gtaScript.async-true;
+  document.head.appendChild(gtaScript);
+
+ gtaScript.onload=function() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-QQERLFFC5R');
+ }
+}
 </script>
     
     <meta charset="UTF-8">
@@ -188,6 +197,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
+
 
 
 
