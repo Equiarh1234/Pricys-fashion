@@ -36,4 +36,39 @@ document.getElementById("emmail-popup").addEventListener("click",function(e){
         this.style.display="none";
  }
 });   
+
+
+
+
+
+//=======================> Cookies <======================
+
+
+function acceptCookies() {
+    document.getElementById("cookie-banner").style.display="none";
+    localStorage.setItem("cookiesAccepted", "true")
+    loadAnalytics();// GA4
+
+}
+
+
+function declineCookies() {
+    document.getElementById("cookie-banner").style.display="none";
+    localStorage.setItem("cookiesAccepted", "false")
+    loadAnalytics();// GA4
+
+}
+
+// on page load, check past choice
+
+window.onload=function() {
+
+    if(this.localStorage.getItem("cookiesAccepted")==="true"){
+        loadAnalytics();
+  }else if (localStorage.getItem("cookiesAccepted")=="true"){
+    this.document.getElementById("cookies-banner").style.disply="none";
+  }
+}
+
     
+
